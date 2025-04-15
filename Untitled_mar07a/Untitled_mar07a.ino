@@ -21,7 +21,7 @@ void setup() {
 }
 
 void loop() {
-  ArduinoCloud.update();
+  ArduinoCloud.update(); //keeps arduino connected to the iot cloud and syncs cloud variables
   
   float lux = LightSensor.GetLightIntensity();
   intensity_light = lux;
